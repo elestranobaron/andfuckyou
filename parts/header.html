@@ -1,0 +1,35 @@
+<!-- wp:group {"className":"topbar","layout":{"type":"constrained"}} -->
+<div class="wp-block-group topbar">
+    <!-- wp:paragraph {"align":"center","className":"topbar-text"} -->
+    <p class="has-text-align-center topbar-text">Follow us on social media</p>
+    <!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"nav-container","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group nav-container">
+    <div class="wp-block-group header-inner" style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;">
+
+        <!-- Logo à gauche -->
+        <!-- wp:site-logo {"width":80,"className":"header-logo"} /-->
+
+        <!-- Menu centré -->
+        <!-- wp:navigation {"className":"nav-desktop","layout":{"type":"flex","justifyContent":"center"}} /-->
+
+        <!-- Icônes à droite -->
+        <div style="display:flex;gap:16px;align-items:center;">
+            <!-- wp:social-links {"iconColor":"green","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+            <ul class="wp-block-social-links has-icon-color is-style-logos-only">
+                <!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
+            </ul>
+            <!-- /wp:social-links -->
+
+            <!-- wp:woocommerce/customer-account {"displayStyle":"icon_only"} /-->
+            <!-- wp:woocommerce/mini-cart {"iconStyle":"line"} /-->
+        </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <!-- wp:template-part {"slug":"mobile-header","theme":"second-coming","tagName":"nav","className":"nav-mobile"} /-->
+</div>
+<!-- /wp:group -->
