@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const mapEl = document.getElementById('map');
-    if (!mapEl || !window.secondComingMap) return;
+    if (!mapEl || !window.secondcoming_map_data) return;
 
     const map = L.map('map', {
         gestureHandling: true,
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         boxZoom: true,
         touchZoom: true,
         zoomControl: false
-    }).setView([secondComingMap.lat, secondComingMap.lon], 16);
+    }).setView([secondcoming_map_data.lat, secondcoming_map_data.lon], 16);
 
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; OpenStreetMap & CartoDB',
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         className: 'cyber-marker'
     });
 
-    L.marker([secondComingMap.lat, secondComingMap.lon], { icon })
+    L.marker([secondcoming_map_data.lat, secondcoming_map_data.lon], { icon })
         .addTo(map)
         .bindPopup('<b style="color:#0f0;">Second Coming</b><br>Cyberpunk Store')
         .openPopup();
